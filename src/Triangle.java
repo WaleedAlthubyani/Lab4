@@ -3,8 +3,8 @@ public class Triangle extends Shape{
     private double base;
 
     public Triangle(double height, double base) {
-        this.height = height;
-        this.base = base;
+        this.height = (height>0) ? height : 1;
+        this.base = (base>0) ? base : 1;
     }
 
     public double getHeight() {

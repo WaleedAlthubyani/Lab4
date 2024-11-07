@@ -3,8 +3,8 @@ public class Rectangle extends Shape{
     private double width;
 
     public Rectangle(double height, double width) {
-        this.height = height;
-        this.width = width;
+        this.height = (height>0) ? height : 1;
+        this.width = (width>0) ? width : 1;
     }
 
     public double getHeight() {
